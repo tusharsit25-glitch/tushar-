@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iframe Demo with CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 3px solid #2c3e50;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Iframe, Maps & External Pages Demo</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="https://www.wikipedia.org" target="frame">Wikipedia</a>
+    <a href="https://www.openai.com" target="frame">OpenAI</a>
+    <a href="https://www.example.com" target="frame">Example</a>
+</nav>
+
+<div class="container">
+
+    <h2>External Page in Iframe</h2>
+    <iframe name="frame">
+        Your browser does not support iframe.
+    </iframe>
+
+    <h2>Google Map (Pune Location)</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Pune&output=embed">
+    </iframe>
+
+    <h2>Direct Website Embed</h2>
+    <iframe src="https://example.com"></iframe>
+
+</div>
+
+<footer>
+    <p>© 2026 Iframe Demo | HTML + CSS Project</p>
+</footer>
+
+</body>
+</html>
